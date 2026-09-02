@@ -5,7 +5,7 @@ function Header() {
     <>
         <Link to="/">Movies Explorer</Link>
         <Link to="/movies">Movies</Link>
-        <Link to="favortes">Favorites</Link>
+        <Link to="/favorites">Favorites</Link>
     </>
   )
 }
