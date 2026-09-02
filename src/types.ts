@@ -1,5 +1,6 @@
 export type Movie = {
-    img: string
-    title: string
+    id: number
+    image: {medium: string, original: string}
+    name: string
 
 }

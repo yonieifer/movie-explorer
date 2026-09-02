@@ -2,13 +2,19 @@ import React from 'react'
 import Header from '../components/Header'
 import SearchBar from '../components/SearchBar'
 import MovieList from '../components/MovieList'
+import useFetch from '../hooks/useFetch'
+import type { Movie } from '../types'
 
 function Movies() {
+    const [movies, isLoading, error] = useFetch<Movie[]>("https://api.tvmaze.com/shows")
   return (
     <>
-    <Header/>
     <SearchBar/>
-    <MovieList movies={[{img: "", title: "just movie", }]}/>
+    {error && <p>Error</p>}
+    {isLoading && <p>Loading...</p>}
+    {movies && <MovieList movies={movies}/>}
+    {console.log(movies)}
+    
     </>
   )
 }
