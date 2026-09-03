@@ -1,14 +1,18 @@
-import React, { useState } from 'react'
-
-function SearchBar() {
-  const [search, setSearch] = useState("")
-  const onSearch = (e: React.ChangeEvent<HTMLInputElement>) => {setSearch(e.target.value)
-  }
-  return (
-    <>
-      <input type="text" onChange={onSearch} value={search} placeholder="🔎Search Movies..."/>
-    </>
-  )
+function SearchBar({
+    search,
+    onSearch,
+}: {
+    search: string;
+    onSearch: (e: React.ChangeEvent<HTMLInputElement>) => void;
+}) {
+    return (
+        <input
+            type="text"
+            onChange={onSearch}
+            value={search}
+            placeholder="🔎Search Movies..."
+        />
+    );
 }
 
-export default SearchBar
+export default SearchBar;

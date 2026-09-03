@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Header() {
     return (
         <>
-            <h2>🎬 Movies Explorer</h2>
+            <h1>🎬 Movies Explorer</h1>
             <nav>
                 <Link to="/">Movies</Link>
                 <Link to="/favorites">Favorites</Link>
