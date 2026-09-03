@@ -1,16 +1,15 @@
 .card {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 5px;
-    border: solid 3px rgb(225, 146, 0);
+    border: solid 3px rgb(255, 181, 44);
     border-radius: 12px;
     padding: 5px;
+    padding-bottom: 1.5rem;
     transition: transform 0.2s;
 }
 
-.card:hover {
-    transform: scale(1.02);
-}
 
 img {
     border-radius: 5px;
@@ -18,8 +17,13 @@ img {
 
 .genres {
     display: flex;
+    flex-wrap: wrap;
     justify-content:center;
-    gap: 6px
+    gap: 5px
+}
+
+button {
+    align-self:center;
 }
 
 span {
@@ -27,6 +31,7 @@ span {
 }
 
 p {
+    margin-bottom: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }

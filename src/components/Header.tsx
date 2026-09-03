@@ -7,7 +7,7 @@ function Header() {
             <h1>🎬 Movies Explorer</h1>
             <nav>
                 <Link to="/">Movies</Link>
-                <Link to="/favorites">Favorites</Link>
+                <Link to="/movies/favorites">Favorites</Link>
             </nav>
         </>
     );

@@ -21,7 +21,7 @@
 a {
     text-decoration: none;
     color: #fdf0dc;
-    background-color: rgb(225, 146, 0);
+    background-color: rgb(255, 181, 44);
     padding: 8px;
     font-size: 1.3rem;
     border-radius: 7px;
@@ -35,12 +35,13 @@ a:hover {
 button {
     text-decoration: none;
     color: #fdf0dc;
-    background-color: rgb(225, 146, 0);
+    background-color: rgb(255, 181, 44);
     padding: 8px;
     font-size: 1.3rem;
     border-radius: 7px;
     transition: transform 0.2s;
     border: none;
+    max-width: 7rem;
 }
 
 button:hover {
