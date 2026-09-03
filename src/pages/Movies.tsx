@@ -1,5 +1,3 @@
-import React from 'react'
-import Header from '../components/Header'
 import SearchBar from '../components/SearchBar'
 import MovieList from '../components/MovieList'
 import useFetch from '../hooks/useFetch'
@@ -13,7 +11,6 @@ function Movies() {
     {error && <p>Error</p>}
     {isLoading && <p>Loading...</p>}
     {movies && <MovieList movies={movies}/>}
-    {console.log(movies)}
     
     </>
   )
