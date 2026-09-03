@@ -19,8 +19,9 @@ function MovieDetails() {
             {data && (
                 <article>
                     <img src={data.image?.medium} alt={data.name} />
-                    <p>{data.name}</p>
-                    <p>rating: {data.rating?.average}</p>
+                    <h2>{data.name}</h2>
+                    <div>{data.genres.map(g => (<span key={g}>{g}</span>))}</div>
+                    <p>⭐ {data.rating?.average}</p>
                     <div dangerouslySetInnerHTML={{__html:data.summary}}></div>
                 </article>
             )}
