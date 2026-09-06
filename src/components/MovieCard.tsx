@@ -29,7 +29,7 @@ function MovieCard({ movie }: { movie: Movie }) {
             <p>⭐{movie.rating?.average}</p>
             <button onClick={onClick}>View</button>
             <div>
-                <button onClick={onToggle}>{isFavorite ? "❤️": "🤍"}</button>
+                <button onClick={onToggle}>{isFavorite ? "❤️" : "🤍"}</button>
             </div>
         </article>
     );

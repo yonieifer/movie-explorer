@@ -14,7 +14,7 @@ function MovieDetails() {
     }
     return (
         <>
-            <button onClick={onBack}>Back to Movies</button>
+            <button onClick={onBack}>Back</button>
             {error && <p>Error</p>}
             {isLoading && <p>Loading...</p>}
             {data && (
