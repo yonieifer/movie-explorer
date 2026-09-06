@@ -1,6 +1,7 @@
 import { useNavigate, useParams } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
 import type {FullMovie} from "../types"
+import FullMovieCard from "../components/FullMovieCard";
 
 function MovieDetails() {
     const { id } = useParams();
@@ -17,13 +18,7 @@ function MovieDetails() {
             {error && <p>Error</p>}
             {isLoading && <p>Loading...</p>}
             {data && (
-                <article>
-                    <img src={data.image?.medium} alt={data.name} />
-                    <h2>{data.name}</h2>
-                    <div>{data.genres.map(g => (<span key={g}>{g}</span>))}</div>
-                    <p>⭐ {data.rating?.average}</p>
-                    <div dangerouslySetInnerHTML={{__html:data.summary}}></div>
-                </article>
+                <FullMovieCard data={data}/>
             )}
         </>
     );

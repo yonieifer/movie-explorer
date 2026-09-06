@@ -1,0 +1,15 @@
+.FullMovieCard {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.genres {
+    display: flex;
+}
+
+.movie-text {
+    max-width: 50vh;
+}
