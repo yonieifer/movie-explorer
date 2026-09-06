@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import type { data } from "react-router-dom";
 
 function useFetch<T>(url: string) {
     const [data, setData] = useState<T | null>(null);

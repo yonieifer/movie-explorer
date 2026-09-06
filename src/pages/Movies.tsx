@@ -14,11 +14,13 @@ function Movies() {
         setSearch(e.target.value);
     };
 
-    const filteredMovies = movies?.filter(m => m.name.toLowerCase().includes(search.toLowerCase()))
+    const filteredMovies = movies?.filter((m) =>
+        m.name.toLowerCase().includes(search.toLowerCase()),
+    );
 
     return (
         <>
-            <SearchBar search={search} onSearch={onSearch}/>
+            <SearchBar search={search} onSearch={onSearch} />
             {error && <p>Error</p>}
             {isLoading && <p>Loading...</p>}
             {filteredMovies && <MovieList movies={filteredMovies} />}
