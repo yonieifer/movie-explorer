@@ -26,10 +26,11 @@ a {
     font-size: 1.3rem;
     border-radius: 7px;
     transition: transform 0.2s;
+    margin-bottom: 1rem;
 }
 
 a:hover {
-    transform: scale(1.03);
+    transform: scale(1.02);
 }
 
 button {
@@ -42,6 +43,7 @@ button {
     transition: transform 0.2s;
     border: none;
     max-width: 7rem;
+    margin-bottom: 1rem;
 }
 
 button:hover {
